@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Emerson Lima</title>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <img src="/imagens/logo.png" alt="Emerson Lima">
-      <div>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>OriginSix</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container show">
+        <a class="logo" href="#">Beauty<span>Salon</span>.</a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Inicio</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testemonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
         </div>
-          <nav>
-            <ul class="nav-list">
-              <li><a href="#home" class="">Home</a></li>
-              <li><a href="#conhecimentos" >Serviços</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#contato">Contato</a></li>
-              <li><a class="icon" href=""><i class="fab fa-facebook"></i></a></li>
-              <li><a class="icon" href=""><i class="fab fa-linkedin"></i></a></li>
-              <li><a class="icon" href=""><i class="fab fa-github"></i></a></li>
-            </ul>
-          </nav>
-      </div>
-    </div>
-  </header>
-</body>
-  <script src="scripts.js"></script>
+        <div class="open">...</div>
+        <div class="close">X</div>
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="Mulher sorrindo enquento faz um penteado em outra Mulher"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
+            <p>
+              Um salão exclusivo em Marcolândia feito especialmente para
+              tratamentos naturais
+            </p>
+            <a class="button" href="#">Agende um horário</a>
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+      <section class="section" id="about">
+        <div class="container grid">Sobre</div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container grid">Serviços</div>
+      </section>
+    </main>
+  </body>
 </html>

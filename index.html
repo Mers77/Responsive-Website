@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!--PAGE INFO-->
+    <title>OriginSix</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>OriginSix</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/assets/fonts/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
+      <nav class="container">
         <a class="logo" href="#">Beauty<span>Salon</span>.</a>
         <div class="menu">
           <ul class="grid">
             <li><a class="title" href="#home">Inicio</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testemonials">Depoimentos</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="open">...</div>
-        <div class="close">X</div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
@@ -49,14 +52,147 @@
           </div>
         </div>
       </section>
+
       <div class="divider-1"></div>
+
       <section class="section" id="about">
-        <div class="container grid">Sobre</div>
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+              alt="Trio de mulheres cabelelereiras sorridentes"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre Nós</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+              autem deserunt in placeat inventore beatae eligendi non
+              reiciendis! Corporis itaque tempore, impedit iusto asperiores
+              beatae. Vitae neque quibusdam soluta repellendus.
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              veniam ipsum tenetur, iure explicabo cupiditate sint dolorum harum
+              cumque adipisci quaerat alias labore deleniti minus pariatur
+              eligendi accusamus. Soluta, quaerat?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus natus debitis mollitia ratione est facere accusamus
+              iste? Fugit enim nesciunt molestias, nostrum recusandae impedit
+              pariatur, deleniti eum voluptatum animi officia?
+            </p>
+          </div>
+        </div>
       </section>
 
+      <div class="divider-2"></div>
+
       <section class="section" id="services">
-        <div class="container grid">Serviços</div>
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia Capilar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                repellat possimus culpa provident mollitia enim facere, voluptas
+                tenetur nesciunt similique molestias minima, perferendis neque
+                ratione animi quidem veritatis consequuntur cum?
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+                voluptate mollitia distinctio eaque repellat doloribus ipsum
+                sit, reiciendis nam voluptas quasi, error explicabo aliquid?
+                Odio provident ad quo praesentium aliquid.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt saepe dicta, illum quia deserunt sapiente error nobis
+                ipsa quaerat mollitia cum! Provident, illum nobis repudiandae
+                mollitia ab aperiam vitae maiores?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+        </div>
+        <div class="testimonials">
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis voluptatem pariatur repudiandae accusantium
+                consequuntur laborum.
+              </p>
+              <cite>
+                <img src="assets/fotos/80.jpg" alt="Wanessa Souza" />
+                Wanessa Souza
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis voluptatem pariatur repudiandae accusantium
+                consequuntur laborum.
+              </p>
+              <cite>
+                <img src="assets/fotos/47.jpg" alt="Adriana Andrade" />
+                Adriana Andrade
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis voluptatem pariatur repudiandae accusantium
+                consequuntur laborum.
+              </p>
+              <cite>
+                <img src="assets/fotos/10.jpg" alt="Malu Guardiola" />
+                Malu Guardiola
+              </cite>
+            </blockquote>
+          </div>
+        </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

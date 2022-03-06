@@ -18,12 +18,12 @@ img {
   height: auto;
 }
 
-/*====== VARIABLES ======*/
+/*====  VARIABLES ============================ */
 :root {
   --header-height: 4.5rem;
 
-  /*Colors*/
-  --hue: 240;
+  /* colors */
+  --hue: 159;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -32,16 +32,9 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-
-  /* fonts */
-  --title-font-size: 1.875rem;
-  --subtitle-font-size: 1rem;
-
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
 }
 
-/*======= BASE =======*/
+/*===  BASE ============================ */
 html {
   scroll-behavior: smooth;
 }
@@ -72,7 +65,7 @@ body {
 }
 
 .button:hover {
-  background-color: var(--base-color-alt);
+  background: var(--base-color-alt);
 }
 
 .divider-1 {
@@ -93,8 +86,7 @@ body {
   );
 }
 
-/*======= LAYOUT =======*/
-
+/*====  LAYOUT ============================ */
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -110,7 +102,7 @@ body {
 }
 
 .section .title {
-  margin-bottom: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .section header {
@@ -125,48 +117,34 @@ body {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
-  width: 100%;
+
   position: fixed;
-  z-index: 100;
   top: 0;
   left: 0;
+  z-index: 100;
   background-color: var(--body-color);
+  width: 100%;
 }
 
 #header.scroll {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
-/*===== TOGGLE MENU =====*/
-
-.toggle {
-  color: var(--base-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-nav .icon-close {
-  visibility: hidden;
-  opacity: 0;
-
-  position: absolute;
-  top: -1.5rem;
-  right: 1.5rem;
-
-  transition: 0.3s;
-}
-
-nav.show .icon-close {
-  visibility: visible;
-  opacity: 1;
-  top: 1.5rem;
-}
-/*========= MAIN =========*/
 main {
   margin-top: calc(var(--header-height) + 2rem);
 }
 
-/*======= NAVEGATION =======*/
+/*====  LOGO ============================ */
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+/*====  NAVIGATION ============================ */
 nav {
   height: var(--header-height);
   display: flex;
@@ -180,7 +158,7 @@ nav ul li {
 }
 
 nav ul li a {
-  transition: color 0.3s;
+  transition: color 0.2s;
   position: relative;
 }
 
@@ -197,6 +175,7 @@ nav ul li a::after {
   position: absolute;
   left: 0;
   bottom: -1.5rem;
+
   transition: width 0.2s;
 }
 
@@ -207,27 +186,27 @@ nav ul li a:hover::after {
 nav .menu {
   opacity: 0;
   visibility: hidden;
-
   top: -20rem;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 nav .menu ul {
   display: none;
 }
 
-/*MOSTRAR MENU*/
-
+/* Mostrar menu */
 nav.show .menu {
   opacity: 1;
   visibility: visible;
+
   background: var(--body-color);
+
   height: 100vh;
   width: 100vw;
+
   position: fixed;
-  left: 0;
   top: 0;
-  justify-items: center;
+  left: 0;
 
   display: grid;
   place-content: center;
@@ -241,18 +220,31 @@ nav.show ul.grid {
   gap: 4rem;
 }
 
-/*======= LOGO =======*/
-.logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
-  color: var(--title-color);
-}
-
-.logo span {
+/* toggle menu */
+.toggle {
   color: var(--base-color);
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-/*=====HOME=====*/
+nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
 
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+
+  transition: 0.2s;
+}
+
+nav.show div.icon-close {
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
+}
+
+/*====  HOME ============================ */
 #home {
   overflow: hidden;
 }
@@ -267,8 +259,8 @@ nav.show ul.grid {
 
 #home .image::before {
   content: '';
-  width: 100%;
   height: 100%;
+  width: 100%;
   background: var(--base-color-second);
   position: absolute;
   top: -16.8%;
@@ -300,8 +292,7 @@ nav.show ul.grid {
   margin-bottom: 2rem;
 }
 
-/*===== ABOUT =====*/
-
+/*====  ABOUT ============================ */
 #about {
   background: white;
 }
@@ -316,8 +307,8 @@ nav.show ul.grid {
 
 #about .image::before {
   content: '';
-  width: 100%;
   height: 100%;
+  width: 100%;
   background: var(--base-color-second);
   position: absolute;
   top: -8.3%;
@@ -339,15 +330,14 @@ nav.show ul.grid {
   margin-right: 1.5rem;
 }
 
-/*===== SERVICES =====*/
-
+/*====  SERVICES ============================ */
 .cards.grid {
   gap: 1.5rem;
 }
 
 .card {
   padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
@@ -362,5 +352,75 @@ nav.show ul.grid {
 
 .card .title {
   font-size: 1.5rem;
-  margin: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/*====  TESTIMONIALS ============================ */
+#testimonials {
+  background: white;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }

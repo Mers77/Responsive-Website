@@ -34,3 +34,18 @@ const swiper = new Swiper('.swiper-container', {
   mousewheel: true,
   keyboard: true
 })
+
+/*ScroolReavels Mostrar elementos quando der scroll*/
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 800,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+#about .image, #abaout .text, #services .card, #testimonials .testimonials, #contact .text, #contact .links`,
+  { interval: 100 }
+)

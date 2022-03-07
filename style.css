@@ -44,7 +44,6 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
 }
 
 .title {
